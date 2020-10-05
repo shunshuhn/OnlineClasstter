@@ -26,7 +26,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="cI2-RE-mcu">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="sEG-nf-QvI"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="nS6-Sv-8bH"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="nS6-Sv-8bH">
+                            <connections>
+                                <segue destination="vuj-Uq-SqB" kind="presentation" id="ggj-Cv-hRn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -38,7 +42,7 @@
             <objects>
                 <viewController id="vuj-Uq-SqB" customClass="PostViewController" customModule="OnlineClasstter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="APO-lV-YlS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CON-EW-nSI">
@@ -52,11 +56,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="tappedPostButton" destination="vuj-Uq-SqB" eventType="touchUpInside" id="zDn-4f-o2g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="iHb-6k-U6a"/>
                     </view>
+                    <connections>
+                        <outlet property="contentTextField" destination="CON-EW-nSI" id="fno-0r-rZN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J6K-ER-mhW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,6 +85,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="tappedLoginButton" destination="oXJ-uP-x57" eventType="touchUpInside" id="kP8-L8-fDA"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="weD-Kq-WBn">
                                 <rect key="frame" x="43" y="155" width="332" height="34"/>

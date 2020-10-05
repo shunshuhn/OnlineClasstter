@@ -7,15 +7,71 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
+    @IBOutlet weak var nameTextField: UITextField!
+
+    let auth = Auth.auth()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        navigationController?.presentationController?.delegate = self
     }
-    
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        nameTextField.resignFirstResponder()
+    }
+
+    @IBAction func tappedLoginButton() {
+        guard let name = nameTextField.text, !name.isEmpty else {
+            let alertController = UIAlertController(title: "名前を入力してください", message: nil, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alertController, animated: true, completion: nil)
+            return
+        }
+
+        auth.signInAnonymously { [weak self] result, error in
+            guard let self = self else { return }
+            if let error = error {
+                let alertController = UIAlertController(title: "ログインエラー", message: "\(error)", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alertController, animated: true, completion: nil)
+            } else {
+                let changeRequest = result?.user.createProfileChangeRequest()
+                changeRequest?.displayName = name
+                changeRequest?.commitChanges { error in
+                    if let error = error {
+                        let alertController = UIAlertController(title: "ログインエラー", message: "\(error)", preferredStyle: .alert)
+                        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(alertController, animated: true, completion: nil)
+                        return
+                    }
+                    self.dismiss(animated: true, completion: nil)
+                }
+
+            }
+        }
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
+// スワイプで閉じないようにする
+extension LoginViewController: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerShouldDismiss(_ presentationController: UIPresentationController) -> Bool {
+        return false
+    }
+}
+
+
+
 
     /*
     // MARK: - Navigation
@@ -27,4 +83,3 @@ class LoginViewController: UIViewController {
     }
     */
 
-}

@@ -15,9 +15,14 @@
 		7D131EF52529B56B0028EE75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D131EF32529B56B0028EE75 /* LaunchScreen.storyboard */; };
 		7D131EFD2529B8950028EE75 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D131EFC2529B8950028EE75 /* LoginViewController.swift */; };
 		7D131EFF2529B9110028EE75 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D131EFE2529B9110028EE75 /* PostViewController.swift */; };
+		7D131F01252ABA5A0028EE75 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D131F00252ABA5A0028EE75 /* Post.swift */; };
+		7D131F03252ABB910028EE75 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D131F02252ABB910028EE75 /* PostTableViewCell.swift */; };
+		7D131F05252AC5590028EE75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D131F04252AC5590028EE75 /* GoogleService-Info.plist */; };
+		A41A66E67746D917F713536F /* Pods_OnlineClasstter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CE455148E914866E26E842 /* Pods_OnlineClasstter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73D12A7FFF1B106B8CFF4513 /* Pods-OnlineClasstter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineClasstter.release.xcconfig"; path = "Target Support Files/Pods-OnlineClasstter/Pods-OnlineClasstter.release.xcconfig"; sourceTree = "<group>"; };
 		7D131EE52529B5640028EE75 /* OnlineClasstter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineClasstter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D131EE82529B5640028EE75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D131EEA2529B5640028EE75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +33,11 @@
 		7D131EF62529B56B0028EE75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D131EFC2529B8950028EE75 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7D131EFE2529B9110028EE75 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		7D131F00252ABA5A0028EE75 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7D131F02252ABB910028EE75 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		7D131F04252AC5590028EE75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		83CBAEC2142928C71F48C408 /* Pods-OnlineClasstter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineClasstter.debug.xcconfig"; path = "Target Support Files/Pods-OnlineClasstter/Pods-OnlineClasstter.debug.xcconfig"; sourceTree = "<group>"; };
+		D7CE455148E914866E26E842 /* Pods_OnlineClasstter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnlineClasstter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41A66E67746D917F713536F /* Pods_OnlineClasstter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		349B5EC9A69B2352C9827670 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83CBAEC2142928C71F48C408 /* Pods-OnlineClasstter.debug.xcconfig */,
+				73D12A7FFF1B106B8CFF4513 /* Pods-OnlineClasstter.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7D131EDC2529B5640028EE75 = {
 			isa = PBXGroup;
 			children = (
 				7D131EE72529B5640028EE75 /* OnlineClasstter */,
 				7D131EE62529B5640028EE75 /* Products */,
+				349B5EC9A69B2352C9827670 /* Pods */,
+				A9CECAB8A241D6DC96A632CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +83,7 @@
 		7D131EE72529B5640028EE75 /* OnlineClasstter */ = {
 			isa = PBXGroup;
 			children = (
+				7D131F04252AC5590028EE75 /* GoogleService-Info.plist */,
 				7D131EE82529B5640028EE75 /* AppDelegate.swift */,
 				7D131EEA2529B5640028EE75 /* SceneDelegate.swift */,
 				7D131EEC2529B5640028EE75 /* ViewController.swift */,
@@ -69,8 +93,18 @@
 				7D131EF62529B56B0028EE75 /* Info.plist */,
 				7D131EFC2529B8950028EE75 /* LoginViewController.swift */,
 				7D131EFE2529B9110028EE75 /* PostViewController.swift */,
+				7D131F00252ABA5A0028EE75 /* Post.swift */,
+				7D131F02252ABB910028EE75 /* PostTableViewCell.swift */,
 			);
 			path = OnlineClasstter;
+			sourceTree = "<group>";
+		};
+		A9CECAB8A241D6DC96A632CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7CE455148E914866E26E842 /* Pods_OnlineClasstter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D131EF92529B56B0028EE75 /* Build configuration list for PBXNativeTarget "OnlineClasstter" */;
 			buildPhases = (
+				0BD550071959E7127162F094 /* [CP] Check Pods Manifest.lock */,
 				7D131EE12529B5640028EE75 /* Sources */,
 				7D131EE22529B5640028EE75 /* Frameworks */,
 				7D131EE32529B5640028EE75 /* Resources */,
+				E466779556E9F5B68EEFA0BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D131EF52529B56B0028EE75 /* LaunchScreen.storyboard in Resources */,
+				7D131F05252AC5590028EE75 /* GoogleService-Info.plist in Resources */,
 				7D131EF22529B56B0028EE75 /* Assets.xcassets in Resources */,
 				7D131EF02529B5640028EE75 /* Main.storyboard in Resources */,
 			);
@@ -142,14 +179,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BD550071959E7127162F094 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnlineClasstter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E466779556E9F5B68EEFA0BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnlineClasstter/Pods-OnlineClasstter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnlineClasstter/Pods-OnlineClasstter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OnlineClasstter/Pods-OnlineClasstter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7D131EE12529B5640028EE75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D131F03252ABB910028EE75 /* PostTableViewCell.swift in Sources */,
 				7D131EFD2529B8950028EE75 /* LoginViewController.swift in Sources */,
 				7D131EED2529B5640028EE75 /* ViewController.swift in Sources */,
 				7D131EE92529B5640028EE75 /* AppDelegate.swift in Sources */,
+				7D131F01252ABA5A0028EE75 /* Post.swift in Sources */,
 				7D131EEB2529B5640028EE75 /* SceneDelegate.swift in Sources */,
 				7D131EFF2529B9110028EE75 /* PostViewController.swift in Sources */,
 			);
@@ -293,6 +374,7 @@
 		};
 		7D131EFA2529B56B0028EE75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83CBAEC2142928C71F48C408 /* Pods-OnlineClasstter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +393,7 @@
 		};
 		7D131EFB2529B56B0028EE75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73D12A7FFF1B106B8CFF4513 /* Pods-OnlineClasstter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

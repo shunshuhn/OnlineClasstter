@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1000519157194-qkusgher4co45m8qkusvie8i16m2r555.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1000519157194-qkusgher4co45m8qkusvie8i16m2r555</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCIodyWPJN1vrm71k4FsKSACxVCr-9X1lI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1000519157194</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>app.haruka.ito.OnlineClasstter</string>
+	<key>PROJECT_ID</key>
+	<string>onlineclass-2426b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>onlineclass-2426b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1000519157194:ios:eff6fb8e39094a07a8fb33</string>
+	<key>DATABASE_URL</key>
+	<string>https://onlineclass-2426b.firebaseio.com</string>
+</dict>
+</plist>
