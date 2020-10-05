@@ -13,6 +13,8 @@
 		7D131EF02529B5640028EE75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D131EEE2529B5640028EE75 /* Main.storyboard */; };
 		7D131EF22529B56B0028EE75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D131EF12529B56B0028EE75 /* Assets.xcassets */; };
 		7D131EF52529B56B0028EE75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D131EF32529B56B0028EE75 /* LaunchScreen.storyboard */; };
+		7D131EFD2529B8950028EE75 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D131EFC2529B8950028EE75 /* LoginViewController.swift */; };
+		7D131EFF2529B9110028EE75 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D131EFE2529B9110028EE75 /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7D131EF12529B56B0028EE75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D131EF42529B56B0028EE75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D131EF62529B56B0028EE75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D131EFC2529B8950028EE75 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7D131EFE2529B9110028EE75 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				7D131EF12529B56B0028EE75 /* Assets.xcassets */,
 				7D131EF32529B56B0028EE75 /* LaunchScreen.storyboard */,
 				7D131EF62529B56B0028EE75 /* Info.plist */,
+				7D131EFC2529B8950028EE75 /* LoginViewController.swift */,
+				7D131EFE2529B9110028EE75 /* PostViewController.swift */,
 			);
 			path = OnlineClasstter;
 			sourceTree = "<group>";
@@ -93,6 +99,9 @@
 		7D131EDD2529B5640028EE75 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "伊藤　陽香";
@@ -138,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D131EFD2529B8950028EE75 /* LoginViewController.swift in Sources */,
 				7D131EED2529B5640028EE75 /* ViewController.swift in Sources */,
 				7D131EE92529B5640028EE75 /* AppDelegate.swift in Sources */,
 				7D131EEB2529B5640028EE75 /* SceneDelegate.swift in Sources */,
+				7D131EFF2529B9110028EE75 /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
